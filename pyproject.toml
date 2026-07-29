@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "animadr"
+version = "0.1.0"
+description = "2.5D layered image animation engine for BlackMamba visual workflows"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.26",
+  "opencv-python>=4.9",
+]
+
+[project.scripts]
+animadr = "animadr.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["animadr*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
