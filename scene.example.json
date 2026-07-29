@@ -1,0 +1,60 @@
+{
+  "canvas": {
+    "width": 1080,
+    "height": 1920
+  },
+  "fps": 30,
+  "duration": 8.0,
+  "background": [0, 0, 0, 255],
+  "layers": [
+    {
+      "name": "background",
+      "file": "assets/layers/background.png",
+      "z": 0,
+      "motions": [
+        {"breathe": {"amount": 0.01, "cycles": 1.0}}
+      ]
+    },
+    {
+      "name": "sun",
+      "file": "assets/layers/sun.png",
+      "z": 10,
+      "motions": [
+        {"rotate": {"speed_deg_s": 0.6}},
+        {"breathe": {"amount": 0.025, "cycles": 1.0}}
+      ]
+    },
+    {
+      "name": "clouds",
+      "file": "assets/layers/clouds.png",
+      "z": 20,
+      "motions": [
+        {"liquid": {"amplitude": 7.0, "frequency": 0.014, "speed": 0.8}}
+      ]
+    },
+    {
+      "name": "planets",
+      "file": "assets/layers/planets.png",
+      "z": 30,
+      "motions": [
+        {"translate": {"x_px": 8.0, "y_px": 4.0, "cycles": 1.0}}
+      ]
+    },
+    {
+      "name": "guitarist",
+      "file": "assets/layers/guitarist.png",
+      "z": 50,
+      "motions": [
+        {"breathe": {"amount": 0.006, "cycles": 1.0}}
+      ]
+    },
+    {
+      "name": "foreground_flowers",
+      "file": "assets/layers/foreground_flowers.png",
+      "z": 60,
+      "motions": [
+        {"sway": {"angle_deg": 2.5, "cycles": 1.0, "pivot_y": 0.95}}
+      ]
+    }
+  ]
+}
