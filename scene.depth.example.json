@@ -1,0 +1,35 @@
+{
+  "canvas": {
+    "width": 1080,
+    "height": 1920
+  },
+  "fps": 30,
+  "duration": 8.0,
+  "background": [0, 0, 0, 255],
+  "layers": [
+    {
+      "name": "depth_scene",
+      "file": "assets/layers/full_scene.png",
+      "z": 0,
+      "motions": [
+        {
+          "depth_parallax": {
+            "depth_map": "assets/depth/full_scene.png",
+            "x_px": 22.0,
+            "y_px": 10.0,
+            "cycles": 1.0,
+            "phase_offset": 0.0,
+            "depth_gamma": 1.15,
+            "invert_depth": false
+          }
+        },
+        {
+          "breathe": {
+            "amount": 0.008,
+            "cycles": 1.0
+          }
+        }
+      ]
+    }
+  ]
+}
